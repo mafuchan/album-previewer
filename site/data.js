@@ -1,6 +1,6 @@
 const albums = [{
   id: 1,
-  title: "Let's Chill"
+  title: "Let's Chill",
   artist: "Easy Jeff and the All-Stars",
   cover_image: "acoustic.jpg",
   tracks: [{
@@ -21,7 +21,7 @@ const albums = [{
   }]
 },{
   id: 2,
-  title: "Ready To Launch"
+  title: "Ready To Launch",
   artist: "The Mudbuckets",
   cover_image: "rock.jpg",
   tracks: [{
@@ -42,7 +42,7 @@ const albums = [{
   }]
 },{
   id: 3,
-  title: "Peaceful Valley"
+  title: "Peaceful Valley",
   artist: "Forlornment",
   cover_image: "acoustic.jpg",
   tracks: [{
@@ -63,7 +63,7 @@ const albums = [{
   }]
 },{
   id: 4,
-  title: "The Drop"
+  title: "The Drop",
   artist: "Beat$mith",
   cover_image: "hiphop.jpg",
   tracks: [{
