@@ -14,7 +14,7 @@ The elements you dynamically create should look like this:
 <!-- For the album listing -->
 <a class="album" href="album.html?album=album-id-goes-here">
   <img src="cover-image-goes-here.jpg" alt="Cover of album title" />
-  <p>Artist Name Goes Here - Album Title Goes Here</p>
+  <p><span class="artist">Artist Name Goes Here</span> - <span class="title">Album Title Goes Here</span></p>
 </a>
 ```
 

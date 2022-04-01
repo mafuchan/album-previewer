@@ -6,7 +6,7 @@ albums.map(({ id, cover_image, title, artist }) => {
   $album.classList.add("album")
   $album.innerHTML = `
     <img src="assets/cover-images/${cover_image}" alt="${title}" />
-    <p>${artist} - ${title}</p>
+    <p><span class="artist">${artist}</span> - <span class="title">${title}</span></p>
   `
   return $album
 }).forEach($album => {
