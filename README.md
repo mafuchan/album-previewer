@@ -28,6 +28,8 @@ The elements you dynamically create should look like this:
 ```html
 <!-- For the pause button -->
 <button><i class="fas fa-pause"></i></button>
+<!-- For the play button -->
+<button><i class="fas fa-play"></i></button>
 ```
 
 ## User Stories
@@ -58,10 +60,6 @@ The elements you dynamically create should look like this:
   * Then that track plays
   * And the pause button becomes a play button
 
-## Definition of Done
-
-* The JavaScript should pass the [Standard](https://standardjs.com/) JS linter with no errors or warnings
-
 ## Rubric
 
 ### Attention to detail
@@ -77,9 +75,8 @@ The elements you dynamically create should look like this:
 
 ### Code Quality
 
-* [ ] - Passes Standard linting with no errors or warnings
+* [ ] - Passes linting with no errors or warnings
 * [ ] - No useless code
-* [ ] - Errors are handled
 
 ## Attribution
 

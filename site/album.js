@@ -9,7 +9,7 @@ const $tracks = document.querySelector(".tracks")
 const $mediaPlayer = document.querySelector(".media-player")
 const $playButton = document.querySelector("button")
 
-let currentTrack = `assets/tracks/${album.tracks[0].file_name}`
+$mediaPlayer.src = `assets/tracks/${album.tracks[0].file_name}`
 
 $title.textContent = album.title
 $artist.textContent = album.artist
@@ -22,8 +22,7 @@ album.tracks.map(track => {
   $track.dataset.trackId = track.id
   $track.textContent = track.title
   $track.addEventListener("click", () => {
-    currentTrack = `assets/tracks/${track.file_name}`
-    $mediaPlayer.src = currentTrack
+    $mediaPlayer.src = `assets/tracks/${track.file_name}` 
     $mediaPlayer.play()
   })
   return $track
@@ -32,10 +31,35 @@ album.tracks.map(track => {
 })
 
 $playButton.addEventListener("click", () => {
-  playTrack(currentTrack)
+  toggleMedia()
 })
 
-function playTrack(url) {
-  $mediaPlayer.src = url
-  $mediaPlayer.play()
+document.addEventListener("keydown", event => {
+  if (event.keyCode === 32) {
+    toggleMedia()
+  }
+})
+
+$mediaPlayer.addEventListener("play", () => {
+  $playButton.innerHTML = `<i class="fas fa-pause"></i>`
+})
+$mediaPlayer.addEventListener("pause", () => {
+  $playButton.innerHTML = `<i class="fas fa-play"></i>`
+})
+$mediaPlayer.addEventListener("ended", () => {
+  $playButton.innerHTML = `<i class="fas fa-play"></i>`
+})
+
+function isPlaying() {
+  const { currentTime, paused, ended } = $mediaPlayer
+
+  return currentTime > 0 && !paused && !ended
+}
+
+function toggleMedia() {
+  if (isPlaying()) {
+    $mediaPlayer.pause()
+  } else {
+    $mediaPlayer.play()
+  }
 }
