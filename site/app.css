@@ -43,3 +43,26 @@ img {
 .artist {
   font-weight: 700;
 }
+
+.tracks {
+  list-style: square;
+  margin-top: 24px;
+}
+
+.tracks li {
+  margin-bottom: 12px;
+}
+
+button {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: hsl(30, 90%, 80%);
+  color: hsl(30, 90%, 10%)
+}
+
+.album-artist {
+  font-style: italic;
+  margin-bottom: 16px;
+}

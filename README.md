@@ -20,9 +20,9 @@ The elements you dynamically create should look like this:
 
 ```html
 <!-- For the track listing -->
-<div class="track-listing" data-track-id="track-id-goes-here">
+<li class="track-listing" data-track-id="track-id-goes-here">
   Song title goes here
-</div>
+</li>
 ```
 
 ```html
