@@ -26,3 +26,8 @@ album.tracks.map(track => {
   $tracks.append($track)
 })
 console.log(album)
+
+$playButton.addEventListener("click", () => {
+  $mediaPlayer.src = `assets/tracks/${album.tracks[0].file_name}`
+  $mediaPlayer.play()
+})

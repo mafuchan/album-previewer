@@ -59,7 +59,8 @@ button {
   width: 35px;
   height: 35px;
   background-color: hsl(30, 90%, 80%);
-  color: hsl(30, 90%, 10%)
+  color: hsl(30, 90%, 10%);
+  cursor: pointer;
 }
 
 .album-artist {
