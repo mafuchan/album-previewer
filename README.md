@@ -14,7 +14,10 @@ The elements you dynamically create should look like this:
 <!-- For the album listing -->
 <a class="album" href="album.html?album=album-id-goes-here">
   <img src="cover-image-goes-here.jpg" alt="Cover of album title" />
-  <p><span class="artist">Artist Name Goes Here</span> - <span class="title">Album Title Goes Here</span></p>
+  <p>
+    <span class="artist">Artist Name Goes Here</span> -
+    <span class="title">Album Title Goes Here</span>
+  </p>
 </a>
 ```
 
@@ -35,48 +38,59 @@ The elements you dynamically create should look like this:
 ## User Stories
 
 1. List albums
-  * Given that a listener is on the home page
-  * Then a list of albums is shown
+
+- Given that a listener is on the home page
+- Then a list of albums is shown
+
 2. List the tracks on one album
-  * Given that a listener is on the home page
-  * When an album is clicked
-  * Then details about that album are shown
+
+- Given that a listener is on the home page
+- When an album is clicked
+- Then details about that album are shown
+
 3. Play a single track from the album
-  * Given that a listener is on an album page
-  * When the play button is clicked
-  * Then a featured track starts playing
+
+- Given that a listener is on an album page
+- When the play button is clicked
+- Then a featured track starts playing
+
 4. Play any track from the album
-  * Given that a listener is on an album page
-  * When a track is clicked
-  * Then that track begins playing
+
+- Given that a listener is on an album page
+- When a track is clicked
+- Then that track begins playing
+
 4. Pause the media player from a keyboard
-  * Given that a track is playing
-  * When the spacebar key is pressed
-  * Then that track pauses
-  * And the play button becomes a pause button
+
+- Given that a track is playing
+- When the spacebar key is pressed
+- Then that track pauses
+- And the play button becomes a pause button
+
 5. Play the media player from a keyboard
-  * Given that a track is paused
-  * When the spacebar key is pressed
-  * Then that track plays
-  * And the pause button becomes a play button
+
+- Given that a track is paused
+- When the spacebar key is pressed
+- Then that track plays
+- And the pause button becomes a play button
 
 ## Rubric
 
 ### Attention to detail
 
-* [ ] - Reasonable commit history
-* [ ] - Albums are listed on the page
-* [ ] - You can navigate to individual albums
-* [ ] - You can play a track on an individual album page
-* [ ] - You can play any track on an individual album page
-* [ ] - It has a custom play/pause button
-* [ ] - You can press spacebar to play/pause
-* [ ] - Playing and pausing causes the play/pause icon to change appropriately
+- [ ] - Reasonable commit history
+- [ ] - Albums are listed on the page
+- [ ] - You can navigate to individual albums
+- [ ] - You can play a track on an individual album page
+- [ ] - You can play any track on an individual album page
+- [ ] - It has a custom play/pause button
+- [ ] - You can press spacebar to play/pause
+- [ ] - Playing and pausing causes the play/pause icon to change appropriately
 
 ### Code Quality
 
-* [ ] - Passes linting with no errors or warnings
-* [ ] - No useless code
+- [ ] - Passes linting with no errors or warnings
+- [ ] - No useless code
 
 ## Attribution
 
